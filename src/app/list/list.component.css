@@ -5,3 +5,11 @@ h3 {
     padding: 17px;
     font-size: 150px
 }
+
+#addItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}

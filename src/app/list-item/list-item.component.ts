@@ -10,7 +10,15 @@ export class ListItemComponent implements OnInit {
 
     @Input() name: string;
 
-    constructor() { }
+    crossedOut = true;
+
+    constructor() {
+        this.crossedOut = Math.floor((Math.random() * 2)) === 0;
+    }
 
     ngOnInit() {}
+
+    toggle() {
+        this.crossedOut = !this.crossedOut;
+    }
 }

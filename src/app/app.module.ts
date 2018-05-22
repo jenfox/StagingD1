@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { FormsModule } from '@angular/forms';
 
 // Register modules and dependencies here
 // they're loaded when app is built/loaded
@@ -21,7 +22,8 @@ import { ListItemComponent } from './list-item/list-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

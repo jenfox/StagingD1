@@ -8,6 +8,7 @@ import { Component, OnInit, OnChanges, OnDestroy, AfterContentChecked, AfterCont
 export class ListComponent implements OnInit {
 
   list: Array<string> = new Array<string>();
+  personName: string;
 
   constructor() {
     this.list.push('John T');
@@ -23,11 +24,19 @@ export class ListComponent implements OnInit {
     this.list.push('Nicole the Meat Eater');
     this.list.push('Thanks Kevin');
     this.list.push('Big Bang Gabe');
+    this.list.push('Trevor SQKWAAdmate');
+    this.list.push('Just[n]');
     this.list.push('I ran out of ideas');
   }
 
   ngOnInit() {
   }
+
+  onAddName() {
+    this.list.push(this.personName);
+    this.personName = '';
+  }
+
 
   // lifecycle hooks - 8 exist
   // OnChanges, OnDestroy, AfterContentChecked, AfterContentInit, AfterViewInit, AfterViewInit

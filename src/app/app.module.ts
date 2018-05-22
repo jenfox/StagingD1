@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
+import { ListItemComponent } from './list-item/list-item.component';
 
 // Register modules and dependencies here
 // they're loaded when app is built/loaded
@@ -13,7 +15,9 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ListComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
